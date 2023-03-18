@@ -1,4 +1,6 @@
 @import "fonts.css";
+@import "colors.css";
+@import "font_sizes.css";
 
 * {
     box-sizing: border-box;
@@ -16,6 +18,15 @@ body {
     flex-direction: column;
     background: black;
 }
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
 
 .about__header {
     display: flex;
@@ -110,6 +121,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 80vh;
     gap: 5vw;
 }
@@ -196,4 +208,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 700px)  {
+    .main__card > * {
+        font-size: calc(100% - 3px)
+    }
+    .card__avatar {
+        height: 100px;
+        width: 100px;
+    }
 }
